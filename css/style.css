@@ -1,0 +1,271 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #030303;
+    color : #ffffff;
+    font-family:"Poppins", Sans-Serif ;
+}
+
+/*.................UPPER #main_bar BAR...............*/
+.main_bar_closing {
+  display: none;
+}
+
+header{
+  padding:0 20px ;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+ .brand{       /*DIV containng logo, its name and others*/
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.brand a{
+  text-decoration: none;
+  color: #18b0c1;
+}
+
+#logo {
+  position: inherit;
+  border-radius: 20px;
+  height: 40px;
+  width: 50px;
+}
+
+header #logo:hover
+{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#main_bar ul{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+#main_bar ul a{
+  color: white;
+}
+#main_bar ul input {
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  
+}
+#main_bar ul input:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#option_bar {
+  top:75px;
+  left:0;
+  background-color: khaki;
+}
+#option_bar ul{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  
+}
+#option_bar ul a{
+  color: white;
+}
+#option_bar ul input {
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  
+}
+#option_bar ul input:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+#hbtn {
+  border: 3px solid #7af088 ;
+  color: #7af088;
+  background-color: #1d1f1d;
+  border-radius: 20px;
+}
+#hbtn:active {
+  background-color:#7af088;
+}
+#cbtn{
+  border: 3px solid #f24fa9 ;
+  color: #f24fa9;
+  background-color: #1d1f1d;
+  border-radius: 20px;
+}
+#cbtn:active {
+  background-color:#f24fa9;
+}
+
+#lbtn {
+  border: 3px solid #32b8f6 ;
+  color: #32b8f6;
+  background-color: #1d1f1d;
+  border-radius: 20px;
+}
+#lbtn:active {
+  background-color:#32b8f6;
+}
+
+#sbtn {
+  border: 3px solid #f69032 ;
+  color: #f69032;
+  background-color: #1d1f1d;
+  border-radius: 20px;
+}
+#sbtn:active {
+  background-color:#f69032;
+}
+
+
+ #threebar {
+   margin: auto 0;
+   display: none;
+   cursor: pointer;
+ }
+ #threebar div{
+   width: 35px;
+   height: 3px;
+   background-color: white;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+
+
+ /*.....................SMALL SCREEN #option_bar BAR................*/
+
+ .open .bar1{
+    -webkit-transform: rotate(-90deg) translate (-6px,6px);   
+    transform:rotate(-90deg) translate (-6px,6px) ;
+ }
+ .open .bar2 {
+   opacity: 0;
+ }
+ 
+ 
+ .open .bar3 {
+   -webkit-transform: rotate(90deg) translate (-6px,-8px);   
+    transform:rotate(-90degdeg) translate (-6px,-8px) ;
+ }
+ 
+ .open .mobile{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: #5a8b97;
+ }
+ 
+ .mobile {
+   display: none;
+   position: absolute;
+   
+   top: 50px;
+   left: 0;
+   height: calc(100vh - 50px);
+   width: 100%;
+   
+ }
+ 
+ .mobile li {
+   margin-bottom: 10px;
+ }
+ 
+ @media only screen and (max-width: 600px)
+ {
+   header #option_bar {
+   display: none;
+ }
+ 
+ #threebar {
+   display:  block;
+ }
+ }
+ 
+ 
+.container2 {
+   background-color: #2f7788;
+   padding: 5px;
+   display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+
+ }
+
+/*....................home page....................*/
+
+.clossing_home {
+  display: none;
+}
+
+
+article {
+  left:10px;
+
+}
+
+article figure {
+    display: flex;
+    flex-direction: row;
+
+}
+
+article figure figcaption{
+  margin-left: 10px;
+}
+
+ 
+ #lbtn{
+   color: #32b8f6 ;
+ }
+ 
+ 
+
+
+p {
+  color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+/*........................CONTACT US....................*/
+
+.contactus_page{
+  display: none;
+}
+
+.openning_contactus{
+display: block;
+
+}
+
+
+
+
+

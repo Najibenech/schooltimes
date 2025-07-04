@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <title>livid comics</title>
+    <meta charset="UTF-8"></meta>
+    <meta http-equiv="X-U-Compatible" content="IE=edge"></meta>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"></meta>
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" 
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/script.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./logInPage.css">
+</head>
+<body>
+
+    <header class="main_bar_opening" id="main_bar_acess">
+        <div class="brand"> 
+        <p id="schoolname_id">SCHOOL</p>
+        <img id="logo" src="/png/logo-no-background.png" alt="" width="100px" height="90px">
+        <p id="schoolname_id">TIMES</p>
+        </div>
+        
+        <nav id="main_bar">
+          <ul>
+           
+            <input type="button" value="HOME" class="home" id="hbtn" onclick="document.location='/index.html'">
+            <input type="button" value="CONTACT US" class="contact_us" id="cbtn" onclick="document.location='/contactus/contactus.html'">
+           
+            
+             
+    
+          </ul>
+        </nav>
+      </header>
+   <img  src="/login_background.jpg" alt="login background image" >
+      <section class="login_page" id="login_id">
+        <div class="center">
+          <h1>Login</h1>
+          <form method="POST" action="LoggedInHomePage/HomeLogIn.html">
+            <div class="txt_field">
+              
+              <input  type="email" required>
+             
+              
+              <span></span>
+              <label><i class="fa fa-user-circle" aria-hidden="true"></i>          Username</label>
+        
+            </div>
+            <div class="txt_field">
+              
+              <input type="password" required>
+              <span></span>
+              <label> <i class="fa fa-lock" aria-hidden="true"></i>   Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+           
+      
+      
+            <input type="submit" value="Login" >
+            <div class="signup_link">
+              <p> Don't have account?</p> <a href="/signup/signup.html" ><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+              
+            </div>
+          </form>
+        </div>
+      </section>
+       
+ 
+</body>
+</html>

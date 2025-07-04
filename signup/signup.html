@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup-schooltimes</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"></meta>
+    <script src="./signup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" 
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./signUpPage.css">
+</head>
+<body>
+    <header class="main_bar_opening" id="main_bar_acess">
+        <div class="brand"> 
+        
+          <img src="/png/logo-no-background.png" alt="" width="100px" height="50px">
+    
+        </div>
+        
+        <nav id="main_bar">
+          <ul>
+           
+            <input type="button" value="HOME" class="home" id="hbtn" onclick="document.location='/index.html'">
+            <input type="button" value="LOGIN" class="login" id="lbtn" onclick="document.location='/login/login.html'">
+            <input type="button" value="SIGNUP" class="signup" id="sbtn" onclick="document.location='/signup/signup.html'">
+            <input type="button" value="CONTACT US" class="contact_us" id="cbtn" onclick="document.location='/contactus/contactus.html'">
+           
+             
+    
+          </ul>
+        </nav>
+      </header>
+
+
+      <section class="signup_page" id="signup_id">
+        <div class="sch_logo">
+          <img src="/png/logo-no-background.png" alt="" width="100px" height="50px">
+         
+        </div>
+        <fieldset class="right_side">
+         
+          <form method="post">
+            <div class="txt_field" id="sepa">
+              
+              <input name="firstName"  type="text" id="first_name"  onsubmit="print()"  required>
+              <span></span>
+              <label for="firstName">FIRST NAME</label>
+            </div>
+              
+              <div class="txt_field" id="sepa">
+              <input	name="lastName"  type="text" id="last_name"   onsubmit="print()" required>
+              <span></span>
+              <label for="lastName">LAST NAME</label>
+              </div>
+            
+    
+            <div class="gender">
+              <label for="gender">GENDER: </label>
+              <span></span>
+              <input	name="gender"  type="radio" id= "sex1" required> MALE</input>
+              <span>  </span>
+              <input	name="gender"  type="radio" id= "sex2" > FEMALE</input>
+            </div>
+            <div>
+              <div class="txt_field" >
+                <input name="phoneNumber" type="tel" id="phone" required>
+                <span></span>
+                <label for="phoneNumber">PHONE NUMBER:</label>
+              </div>
+               
+              <div class="txt_field" >
+                <input name="password" type="password" id="passWord"  required>
+                <span></span>
+                <label for="password">PASSWORD</label>
+              </div>
+      
+              <div  class="txt_field" >
+                <input name="password" type="password" id="confirm_passWord"  required>
+                <span></span>
+                <label for="password">CONFIRM PASSWORD</label>
+              </div>
+            </div>
+              
+          
+            <div class="input_box">
+              <label for="DOT">DATE OF BIRTH: </label>
+              <input	name="DOT"  type="date" id= "dob" required >
+            </div>
+              <span></span>
+              <span></span>
+              <div  class="input_box" >
+                <label for ="divisions">WHO ARE YOU?:</label>
+                <select name="divisins" id="division" class="who_are_you"  onchange="first_selection();">
+                <option></option>
+                <option value="staff" >STAFF</option>
+                <option value="parent" >PARENT</option>
+                <option value="student">STUDENT</option>
+                </select>
+              </div>
+          
+
+
+              <section id="staff" class="not_selected_staff">
+                <div id="staff_divs" class="txt_field" >
+                  <input name="employeeId" type="number" id="employee_id" required>
+                  <span></span>
+                  <label for="employeeId">EMPLOYEE-ID:</label>
+                
+                </div>
+                <div  class="input_box" >
+                    <label for ="depart">DEPARTMENT:</label>
+                    <select name="depart" id="department"  onchange="second_selection();">
+                    <option></option>
+                    <option value="accounts">ACCOUNTS</option>
+                    <option value="academics" >ACADEMICS</option>
+                    <option value="management" >MANAGEMENT</option>
+                    </select>
+                
+                </div>
+              </section>
+
+
+              <section id="parent" class="not_selected_parent">
+                <div id="parent_divs"  class="txt_field" >
+                  <input name="national-id" type="text" id="national_id" required>
+                  <span></span>
+                  <label for="national-id">NATINAL-ID:</label>
+                 
+                  
+                </div>
+                <div id="parent_divs"  class="txt_field" >
+                  <input name="student_id" type="number" id="par_std_id" required>
+                  <span></span>
+                  <label for="student_id">STUDENT'S ID:</label>
+                  
+                  
+                </div>
+  
+              </section>
+  
+            <section id="student" class="not_selected_student">
+              <div id="parent_divs"  class="txt_field" >
+                <input name="student_id" type="number" id="std_id" required>
+                <span></span>
+                <label for="student_id">STUDENT'S ID:</label>
+              </div>
+            </section>
+          
+
+
+
+
+
+
+                             <!---................academics..........................................-->
+                <div id="academics" class="not_selected_academics">
+                  <label for ="academic">ACADEMICS-POSITION:</label>
+                  <select name="academic" id="Academic">
+                  <option></option>
+                  <option value="dos">D-O-S</option>
+                  <option value="ass_dos" >ASS D-O-S</option>
+                  <option value="teacher" >TEACHER</option>
+                  </select>
+                </div>
+                <div id="acounts" class="not_selected_acounts" >
+                  <label for ="acount">ACCOUNTS-POSITION:</label>
+                  <select name="acount" id="Acount">
+                  <option></option>
+                  <option value="bursar">BURSAR</option>
+                  <option value="ass_dos" >ASS D-O-S</option>
+                  <option value="teacher" >TEACHER</option>
+                  </select>
+                 </div>
+                  <div id="managements" class="not_selected_management"  >
+                  <label for ="management">MANAGEMENT-POSITION:</label>
+                  <select name="management" id="Management">
+                  <option></option>
+                  <option value="admissons">ADMISSIONS COUNSELOR</option>
+                  <option value="ass_dos" >LIBRARIAN</option>
+                  <option value="teacher" >HUMAN RESOURCES</option>
+                  </select>
+                  </div>
+                 
+    
+                 
+          
+      
+        
+               
+
+
+               
+          </form>
+          <div>
+            <a href="/login/login.html"><button type="submit" id="button_Log">SEND</button></a>
+          </div>
+          <div class="icon_links">
+            <div><a href="/index.html" ><i class="fa fa-home" aria-hidden="true"></i></a></div>
+            <div> <a href="/login/login.html" ><i class="fa fa-sign-in" aria-hidden="true"></i></a></div>
+            <div> <a href="/contactus/contactus.html" ><i class="fa fa-phone-square" aria-hidden="true"></i></a></div>
+          </div>    
+          
+        </fieldset>
+        
+      </section>
+        
+      
+       
+
+</body>
+</html>

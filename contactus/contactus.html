@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livid Comics</title>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./contactUsPage.css">
+</head>
+<body>
+  <header class="main_bar_opening" id="main_bar_access">
+    <div class="brand">
+      <p class="schoolname">SCHOOL</p>
+      <img id="logo" src="/schooltimeslogo.png" alt="School Times Logo" width="100" height="90">
+      <p class="schoolname">TIMES</p>
+    </div>
+    <nav id="main_bar">
+      <div class="nav-buttons">
+        <button class="home" id="hbtn" onclick="location.href='/index.html'">HOME</button>
+        <button class="login" id="lbtn" onclick="location.href='/login/login.html'">LOGIN</button>
+        <button class="signup" id="sbtn" onclick="location.href='/signup/signup.html'">SIGNUP</button>
+        <button class="contact_us" id="cbtn" onclick="location.href='/contactus/contactus.html'">CONTACT US</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contactus_page" id="contact_id">
+    <div class="contact_container">
+      <form id="contact_form" onsubmit="event.preventDefault(); print();">
+        <div>
+          <label for="fname">FIRST NAME:</label><br>
+          <input name="firstName" type="text" id="fname" placeholder="First name">
+        </div>
+        <br>
+        <div>
+          <label for="lname">LAST NAME:</label><br>
+          <input name="lastName" type="text" id="lname" placeholder="Last name">
+        </div>
+        <div>
+          <label for="e_mail">E-MAIL:</label><br>
+          <input type="email" name="e-mail" id="e_mail" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="phone_contact_us">PHONE NUMBER:</label><br>
+          <input name="phoneNumber" type="tel" id="phone_contact_us" placeholder="0000-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+        </div>
+        <div>
+          <label for="customer_text">MESSAGE:</label><br>
+          <textarea name="type_message" id="customer_text" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="customer_text_btn">SEND</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+  
+  /*..... classes...*/
+  .clossing_classes{
+    display: none;
+  }
+  
+  .opening_classes{
+    display: block;
+    position: relative;
+  }
+
+  
+  
+  
+  #classes_dropdown_id {
+    display: inline-block;
+    position: relative;
+   
+  }
+  
+  #cla_dropdown_content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(211, 202, 103, 0.4);
+    background-color:#d5b66d;
+    border-radius: 5px;
+    
+  }
+  
+  #classes_dropdown_id:hover #cla_dropdown_content {
+    display: block;
+  }
+  
+  #cla_dropdown_content a {
+    display: block;
+    color: #d5b66d;
+    padding: 5px;
+    text-decoration: none;
+    
+  }
+  
+  #cla_dropdown_content a:hover {
+    color: BLACK;
+    background-color:#504120;
+  }
+
